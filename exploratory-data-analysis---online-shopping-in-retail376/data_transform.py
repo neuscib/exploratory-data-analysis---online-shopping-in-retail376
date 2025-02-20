@@ -11,9 +11,18 @@ class DataTransform:
     
     def convert_month(self):
         """Converts the 'month' column to a datetime object, representing the first day of each month."""
-        # Converting 'month' to the first day of the corresponding month in datetime format
-        self.df['month'] = pd.to_datetime(self.df['month'] + ' 01', format='%b %d', errors='coerce')
+        # Check the unique values in the 'month' column
+        print(self.df['month'].unique())
+
+        # Ensure all values are in a valid format before converting
+        valid_months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        
+        # Replace invalid months with 'Jan' or any other default value
+        self.df['month'] = self.df['month'].apply(lambda x: x if x in valid_months else 'Jan')
     
+        # Now convert to datetime, ensuring only valid values are converted
+        self.df['month'] = pd.to_datetime(self.df['month'], format='%b', errors='ignore')
+
     def convert_duration_columns(self):
         """Converts duration columns (in seconds) to timedelta format."""
         duration_columns = [
@@ -63,4 +72,10 @@ class DataTransform:
 
 # Apply the transformations to the DataFrame
 data_transformer = DataTransform(df)
-df
+df_transformed = data_transformer.apply_transforms()
+
+# Save the transformed DataFrame to a new CSV file
+output_file_path = r"C:\Users\nieve\exploratory-data-analysis---online-shopping-in-retail376\transformed_data.csv"
+df_transformed.to_csv(output_file_path, index=False)
+
+print(f"File CSV saved in: {output_file_path}")
