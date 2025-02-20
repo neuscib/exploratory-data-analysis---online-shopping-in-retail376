@@ -10,10 +10,6 @@ class DataTransform:
         self.df = df
     
     def convert_month(self):
-        """Converts the 'month' column to a datetime object, representing the first day of each month."""
-        # Check the unique values in the 'month' column
-        print(self.df['month'].unique())
-
         # Ensure all values are in a valid format before converting
         valid_months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         
