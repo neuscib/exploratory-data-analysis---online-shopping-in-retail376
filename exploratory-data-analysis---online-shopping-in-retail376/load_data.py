@@ -6,5 +6,5 @@ df = pd.read_csv(file_path)
 # All columns
 pd.set_option("display.max_columns", None)
 
-print(f"✅ Loaded data: {df.shape[0]} rows, {df.shape[1]} columns")
+print(f" Loaded data: {df.shape[0]} rows, {df.shape[1]} columns")
 print(df.head())  # First 5 rows
