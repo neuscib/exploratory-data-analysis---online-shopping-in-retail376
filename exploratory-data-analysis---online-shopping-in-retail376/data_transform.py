@@ -19,9 +19,12 @@ class DataTransform:
         
         # Replace invalid months with 'Jan' or any other default value
         self.df['month'] = self.df['month'].apply(lambda x: x if x in valid_months else 'Jan')
-    
+        
         # Now convert to datetime, ensuring only valid values are converted
-        self.df['month'] = pd.to_datetime(self.df['month'], format='%b', errors='ignore')
+        try:
+            self.df['month'] = pd.to_datetime(self.df['month'], format='%b')
+        except Exception as e:
+            print(f"Error converting 'month' column: {e}")
 
     def convert_duration_columns(self):
         """Converts duration columns (in seconds) to timedelta format."""
