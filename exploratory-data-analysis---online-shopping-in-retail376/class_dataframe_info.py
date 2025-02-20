@@ -10,15 +10,16 @@ class DataFrameInfo:
         print(self.df.dtypes)
     
     def statistical_summary(self):
-        """Generate statistical values: median, standard deviation, and mean."""
+        """Generate statistical values: median, standard deviation, and mean for numerical columns only."""
+        numeric_df = self.df.select_dtypes(include=['number'])  # Selecting only numerical columns
         stats = {
-            'mean': self.df.mean(),
-            'median': self.df.median(),
-            'std_dev': self.df.std()
+            'mean': numeric_df.mean(),
+            'median': numeric_df.median(),
+            'std_dev': numeric_df.std()
         }
         print("Statistical Summary:")
         print(pd.DataFrame(stats))
-    
+
     def count_distinct_values(self):
         """Count distinct values in categorical columns."""
         categorical_columns = self.df.select_dtypes(include=['category', 'object']).columns
@@ -41,3 +42,4 @@ class DataFrameInfo:
     def additional_info(self):
         """Any other useful information (like memory usage)."""
         print(f"\nMemory Usage: {self.df.memory_usage(deep=True).sum() / (1024**2):.2f} MB")
+
