@@ -87,6 +87,7 @@ To run the project, follow these steps:
 
 
 ### File structure of the project
+
 ├── data_without_null_values.csv         # The cleaned dataset
 ├── your_script_name.py                  # Python script with EDA code
 ├── requirements.txt                     # List of dependencies
