@@ -1,8 +1,7 @@
 import pandas as pd
 
-# File path to the dataset
-file_path = r"C:\Users\nieve\exploratory-data-analysis---online-shopping-in-retail376\customer_activity_data.csv"
-df = pd.read_csv(file_path)
+df = pd.read_csv("/content/transformed_data.csv")  
+print(df)
 
 class DataTransform:
     
