@@ -68,13 +68,13 @@ To get started with this project, follow these steps:
     ```bash
     git clone https://github.com/neuscib/exploratory-data-analysis---online-shopping-in-retail376.git
 
-    ```
+       ```
 
 2. Navigate to the project folder:
     ```bash
     cd exploratory-data-analysis---online-shopping-in-retail376
 
-    ```
+       ```
 
 3. Install the required dependencies:
     ```bash
@@ -85,16 +85,16 @@ To get started with this project, follow these steps:
 - Load the dataset and perform the initial exploratory analysis:
   ```bash
    python scripts/load_data.py
- ´´´  
+   ´´´  
 - Run data transformation scripts
   ```bash
    python scripts/data_transform.py
-´´´
+  ´´´
 
 - Open Jupyter Notebook to visualize the analysis
   ```bash
    jupyter notebook "analysis/Analysis and visualisation.ipynb"
- ´´´
+   ´´´
 
 
 
