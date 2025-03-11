@@ -67,14 +67,12 @@ To get started with this project, follow these steps:
 1. Clone the repository:
     ```bash
     git clone https://github.com/neuscib/exploratory-data-analysis---online-shopping-in-retail376.git
-
-       ```
+    ```
 
 2. Navigate to the project folder:
     ```bash
     cd exploratory-data-analysis---online-shopping-in-retail376
-
-       ```
+    ```
 
 3. Install the required dependencies:
     ```bash
@@ -84,37 +82,32 @@ To get started with this project, follow these steps:
 ## Usage Instructions
 - Load the dataset and perform the initial exploratory analysis:
   ```bash
-   python scripts/load_data.py
-   ´´´  
-- Run data transformation scripts
-  ```bash
-   python scripts/data_transform.py
-  ´´´
+  python scripts/load_data.py
 
-- Open Jupyter Notebook to visualize the analysis
-  ```bash
-   jupyter notebook "analysis/Analysis and visualisation.ipynb"
-   ´´´
+- Run data transformation scripts:
+  ````bash
+  python scripts/data_transform.py
 
+- Open Jupyter Notebook to visualize the analysis:
+  ```bash
+  jupyter notebook "analysis/Analysis and visualisation.ipynb"
 
 
 
 ### File structure of the project
 
 exploratory-data-analysis---online-shopping-in-retail
-─ analysis/
-   ── Analysis and visualisation.ipynb
-─ scripts/                         # Python scripts for data transformation and processing
-   ── data_transform.py
-   ── data_without_higly_correlated_columns.py
-   ── data_without_null_values.py
-   ── data_without_outliers.py
-   ── db_utils.py
-   ── load_data.py
-─ requirements.txt                 # List of dependencies
-─ README.md                         # Project documentation
-
-
+│── analysis/
+│   ├── Analysis and visualisation.ipynb
+│── scripts/                         # Python scripts for data transformation and processing
+│   ├── data_transform.py
+│   ├── data_without_higly_correlated_columns.py
+│   ├── data_without_null_values.py
+│   ├── data_without_outliers.py
+│   ├── db_utils.py
+│   ├── load_data.py
+│── requirements.txt                 # List of dependencies
+│── README.md                         # Project documentation
 
 
 ## License information
