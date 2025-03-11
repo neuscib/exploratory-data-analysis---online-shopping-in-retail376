@@ -1,4 +1,3 @@
-'''
 # EXPLORATORY DATA ANALYSIS - ONLINE SHOPPING IN RETAIL 
 
 
@@ -96,7 +95,7 @@ jupyter notebook "analysis/Analysis and visualisation.ipynb"
 
 ### File structure of the project
 
-exploratory-data-analysis---online-shopping-in-retail                
+"""exploratory-data-analysis---online-shopping-in-retail                
 │── analysis/          
 │   ├── Analysis and visualisation.ipynb
 │── scripts/                         # Python scripts for data transformation and processing
@@ -107,10 +106,10 @@ exploratory-data-analysis---online-shopping-in-retail
 │   ├── db_utils.py
 │   ├── load_data.py
 │── requirements.txt                 # List of dependencies
-│── README.md                         # Project documentation
+│── README.md                         # Project documentation"""
 
 
 ## License information
 
 This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
-'''
+
