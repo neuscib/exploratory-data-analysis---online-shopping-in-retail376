@@ -82,14 +82,20 @@ To get started with this project, follow these steps:
     ```
 
 ## Usage Instructions
-- Load the dataset and perform the initial exploratory analysis
-python scripts/load_data.py
-
+- Load the dataset and perform the initial exploratory analysis:
+  ```bash
+   python scripts/load_data.py
+ ´´´  
 - Run data transformation scripts
-python scripts/data_transform.py
+  ```bash
+   python scripts/data_transform.py
+´´´
 
 - Open Jupyter Notebook to visualize the analysis
-jupyter notebook "analysis/Analysis and visualisation.ipynb"
+  ```bash
+   jupyter notebook "analysis/Analysis and visualisation.ipynb"
+ ´´´
+
 
 
 
