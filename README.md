@@ -95,7 +95,21 @@ jupyter notebook "analysis/Analysis and visualisation.ipynb"
 
 ### File structure of the project
 
-exploratory-data-analysis---online-shopping-in-retail │ ├── analysis/ │ └── Analysis and visualisation.ipynb │ ├── scripts/ # Python scripts for data transformation and processing │ ├── data_transform.py │ ├── data_without_higly_correlated_columns.py │ ├── data_without_null_values.py │ ├── data_without_outliers.py │ ├── db_utils.py │ └── load_data.py │ ├── requirements.txt # List of dependencies └── README.md # Project documentation
+"""
+exploratory-data-analysis---online-shopping-in-retail
+│── analysis/
+│   ├── Analysis and visualisation.ipynb
+│── scripts/                         # Python scripts for data transformation and processing
+│   ├── data_transform.py
+│   ├── data_without_higly_correlated_columns.py
+│   ├── data_without_null_values.py
+│   ├── data_without_outliers.py
+│   ├── db_utils.py
+│   ├── load_data.py
+│── requirements.txt                 # List of dependencies
+│── README.md                         # Project documentation
+"""
+
 
 
 ## License information
