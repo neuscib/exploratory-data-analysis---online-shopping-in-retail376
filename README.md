@@ -10,9 +10,14 @@
 
 ## Project Description
 
-This project analyzes customer activity data from an online retail store. 
+This project performs an Exploratory Data Analysis (EDA) on online shopping behavior in the retail sector. The goal is to identify trends, understand customer interactions, and uncover insights related to website traffic, user engagement, and sales performance.
 
-The goal is to explore user behavior, gain insights usind data analysis techniques and understad key metrics.
+### Key Objectives:
+- Identify the main sources of revenue.
+- Analyze customer behavior (returning vs. new customers).
+- Evaluate the impact of weekends on sales.
+- Determine which traffic sources contribute the most to conversions.
+- Handle missing data, outliers, and correlations in the dataset.
 
 ### What I Learned:
 
@@ -77,24 +82,33 @@ To get started with this project, follow these steps:
     ```
 
 ## Usage Instructions
-To run the project, follow these steps:
+# Load the dataset and perform the initial exploratory analysis
+python scripts/load_data.py
 
-1. Open a terminal and navigate to the project directory.
-2. Run the Python script:
-    ```bash
-    python your_script_name.py
-    ```
+# Run data transformation scripts
+python scripts/data_transform.py
 
-3. Ensure that the data file (data_without_null_values.csv) is available in the correct directory.
+# Open Jupyter Notebook to visualize the analysis
+jupyter notebook "analysis/Analysis and visualisation.ipynb"
+
 
 
 ### File structure of the project
 
-├── data_without_null_values.csv         # The cleaned dataset
-├── your_script_name.py                  # Python script with EDA code
-├── requirements.txt                     # List of dependencies
-├── README.md                            # Project documentation
-└── other_files_and_folders              # Any additional files
+exploratory-data-analysis---online-shopping-in-retail                
+│── analysis/          
+│   ├── Analysis and visualisation.ipynb
+│── scripts/                         # Python scripts for data transformation and processing
+│   ├── data_transform.py
+│   ├── data_without_higly_correlated_columns.py
+│   ├── data_without_null_values.py
+│   ├── data_without_outliers.py
+│   ├── db_utils.py
+│   ├── load_data.py
+│── requirements.txt                 # List of dependencies
+│── README.md                         # Project documentation
+
 
 ## License information
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
